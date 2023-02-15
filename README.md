@@ -30,7 +30,7 @@ Para que el productor y el consumidor sepan de que cola consumir se debe especif
 
 ### Abrir RabbitMQ desde el navegador
 
-```http
+```
   http://localhost:15672/
 
   user/pass: guest/guest
@@ -42,7 +42,7 @@ Para ejecutar este proyecto desde cualquier IDE se debe correr la clase main tan
 
 Path
 
-```http
+```
   http://localhost:8081/test
 ```
 
