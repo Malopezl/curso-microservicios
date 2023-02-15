@@ -38,22 +38,26 @@ Para que el productor y el consumidor sepan de que cola consumir se debe especif
 
 Para ejecutar este proyecto desde cualquier IDE se debe correr la clase main tanto del productor como del consumidor.
 
-### Realizar una peticion desde postman
+## Realizar una peticion desde postman
 
-Path
+### Post a message
 
 ```
-  http://localhost:8081/test
+  POST http://localhost:8081/test
 ```
 
 Body
 
 ```javascript
   {
-    "id": Integer,
-    "message": "STRING"
+    "id": 0,
+    "message": "Hello world!"
   }
 ```
+| Parameter | Type      | Description                       |
+| :-------- | :-------- | :-------------------------------- |
+| `id`      | `integer` | **Required**. message unique id   |
+| `message` | `string`  | **Required**. the message to send |
 
 Al momento de enviar el mensaje, en la consola del consumidor se debe visualizar algo parecido a esto:
 
